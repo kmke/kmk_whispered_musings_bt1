@@ -1,5 +1,4 @@
 import { useState, FormEvent } from 'react';
-import { Lock } from 'lucide-react';
 
 interface LoginProps {
   onLogin: () => void;
@@ -33,7 +32,7 @@ export default function Login({ onLogin }: LoginProps) {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-100 via-gold-50 to-emerald-50 relative overflow-hidden">
+    <div className="min-h-screen flex items-center justify-center bg-white relative overflow-hidden">
       {/* Decorative background */}
       <div className="absolute inset-0 opacity-10">
         <svg className="w-full h-full" viewBox="0 0 800 800">
@@ -44,34 +43,34 @@ export default function Login({ onLogin }: LoginProps) {
       </div>
 
       <div className="relative z-10 w-full max-w-md px-6">
-        <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border-2 border-gold-200">
-          <div className="text-center mb-8">
-            <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-pink-200 via-gold-200 to-emerald-200 flex items-center justify-center">
-              <Lock className="text-gold-700" size={40} />
-            </div>
-            <h1 className="text-3xl font-semibold text-gray-900 mb-2">Whispered Musings</h1>
-            <p className="text-gray-600">Site Under Development</p>
+        <div className="text-center mb-8">
+          <div className="flex justify-center mb-6">
+            <img
+              src="/trans_background.png"
+              alt="Maira Kearns"
+              className="w-full max-w-[200px] sm:max-w-[240px] h-auto"
+            />
           </div>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl text-gold-600 mb-6 font-script">
+            Whispered Musings
+          </h1>
+        </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <label htmlFor="password" className="block text-gray-900 font-semibold mb-2">
-                Enter Password
-              </label>
-              <input
-                type="password"
-                id="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-gold-600 focus:ring-2 focus:ring-gold-200 focus:outline-none transition-colors bg-white"
-                placeholder="Password"
-                autoFocus
-                disabled={isLoading}
-              />
-            </div>
+        <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg p-6 border-2 border-gold-200">
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <input
+              type="password"
+              id="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="w-full px-4 py-2.5 rounded-lg border-2 border-gray-300 focus:border-gold-600 focus:ring-2 focus:ring-gold-200 focus:outline-none transition-colors bg-white text-sm"
+              placeholder="Password"
+              autoFocus
+              disabled={isLoading}
+            />
 
             {error && (
-              <div className="text-red-600 text-sm bg-red-50 border-2 border-red-200 rounded-lg p-3">
+              <div className="text-red-600 text-xs bg-red-50 border-2 border-red-200 rounded-lg p-2">
                 {error}
               </div>
             )}
@@ -79,15 +78,11 @@ export default function Login({ onLogin }: LoginProps) {
             <button
               type="submit"
               disabled={isLoading || !password}
-              className="w-full bg-gold-600 text-white px-6 py-3 rounded-full hover:bg-gold-700 transition-all duration-200 font-medium text-lg shadow-lg hover:shadow-xl transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+              className="w-full bg-gold-600 text-white px-4 py-2.5 rounded-full hover:bg-gold-700 transition-all duration-200 font-medium text-sm shadow-md hover:shadow-lg transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
             >
-              {isLoading ? 'Checking...' : 'Enter Site'}
+              {isLoading ? 'Checking...' : 'Enter'}
             </button>
           </form>
-
-          <p className="text-xs text-gray-500 text-center mt-6">
-            This site is currently under development
-          </p>
         </div>
       </div>
     </div>
