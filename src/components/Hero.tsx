@@ -1,9 +1,7 @@
-import { Sparkles } from 'lucide-react';
-
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-pink-50 via-white to-emerald-50">
-      <div className="absolute inset-0 opacity-10">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-pink-200">
+      <div className="absolute inset-0 opacity-20">
         <svg className="w-full h-full" viewBox="0 0 800 800">
           <circle
             cx="400"
@@ -11,50 +9,30 @@ export default function Hero() {
             r="300"
             fill="none"
             stroke="rgb(217, 119, 6)"
-            strokeWidth="2"
+            strokeWidth="1"
             opacity="0.3"
           />
         </svg>
       </div>
 
-      <div className="absolute top-20 left-10 animate-pulse">
-        <Sparkles className="text-amber-400" size={20} />
-      </div>
-      <div className="absolute bottom-32 right-16 animate-pulse delay-75">
-        <Sparkles className="text-pink-300" size={24} />
-      </div>
-      <div className="absolute top-40 right-24 animate-pulse delay-150">
-        <Sparkles className="text-amber-500" size={16} />
-      </div>
-
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
         <div className="mb-8 inline-block">
-          <div className="relative">
-            <div className="w-48 h-48 sm:w-64 sm:h-64 mx-auto rounded-full overflow-hidden border-4 border-amber-500 shadow-2xl">
-              <img
-                src="https://images.pexels.com/photos/3094215/pexels-photo-3094215.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Maira Kearns"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="absolute -top-4 -left-4 w-8 h-8 sm:w-12 sm:h-12">
-              <Sparkles className="text-amber-500 w-full h-full" />
-            </div>
-            <div className="absolute -bottom-4 -right-4 w-6 h-6 sm:w-10 sm:h-10">
-              <Sparkles className="text-pink-400 w-full h-full" />
-            </div>
-          </div>
+          <img
+            src="/image.png"
+            alt="Maira Kearns"
+            className="w-72 h-auto sm:w-80"
+          />
         </div>
 
-        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-serif text-gray-800 mb-4">
-          Whispered <span className="text-amber-600">Musings</span>
+        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-serif text-gray-900 mb-4">
+          Whispered <span className="text-amber-700">Musings</span>
         </h1>
 
-        <p className="text-xl sm:text-2xl text-gray-600 mb-6 font-light">
+        <p className="text-xl sm:text-2xl text-gray-800 mb-6 font-light">
           Maira Kearns
         </p>
 
-        <p className="text-lg sm:text-xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-lg sm:text-xl text-gray-900 mb-8 max-w-3xl mx-auto leading-relaxed">
           Intuitive tarot reader, spirit painter, and guide to the whispers of your soul.
           Let me illuminate your path with the wisdom of the cards and the art of intuition.
         </p>
@@ -76,24 +54,24 @@ export default function Hero() {
 
         <div className="flex justify-center space-x-12 text-center max-w-4xl mx-auto">
           <div className="flex-1">
-            <div className="text-3xl font-serif text-amber-600 mb-2">Tarot</div>
-            <p className="text-sm text-gray-600">Readings</p>
+            <div className="text-3xl font-serif text-amber-700 mb-2">Tarot</div>
+            <p className="text-sm text-gray-900">Readings</p>
           </div>
-          <div className="w-px bg-gray-300"></div>
+          <div className="w-px bg-gray-400"></div>
           <div className="flex-1">
-            <div className="text-3xl font-serif text-amber-600 mb-2">Spirit</div>
-            <p className="text-sm text-gray-600">Paintings</p>
+            <div className="text-3xl font-serif text-amber-700 mb-2">Spirit</div>
+            <p className="text-sm text-gray-900">Paintings</p>
           </div>
-          <div className="w-px bg-gray-300"></div>
+          <div className="w-px bg-gray-400"></div>
           <div className="flex-1">
-            <div className="text-3xl font-serif text-amber-600 mb-2">Intuitive</div>
-            <p className="text-sm text-gray-600">Guidance</p>
+            <div className="text-3xl font-serif text-amber-700 mb-2">Intuitive</div>
+            <p className="text-sm text-gray-900">Guidance</p>
           </div>
         </div>
       </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <svg className="w-6 h-6 text-gray-400" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+        <svg className="w-6 h-6 text-gray-700" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
           <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
         </svg>
       </div>
