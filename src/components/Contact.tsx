@@ -32,19 +32,19 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-white relative overflow-hidden">
-      <div className="absolute inset-0 opacity-5">
+    <section id="contact" className="py-24 bg-pink-100 relative overflow-hidden">
+      <div className="absolute inset-0 opacity-3">
         <svg className="w-full h-full" viewBox="0 0 800 800">
-          <circle cx="400" cy="400" r="350" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="1" strokeDasharray="5,5" />
+          <circle cx="400" cy="400" r="350" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" strokeDasharray="5,5" />
         </svg>
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-serif text-gray-800 mb-4">
+          <h2 className="text-4xl sm:text-5xl text-gray-900 mb-4 font-semibold">
             Get in <span className="text-amber-600">Touch</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-800 max-w-2xl mx-auto">
             Ready to begin your spiritual journey? I'd love to hear from you.
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-300 via-amber-500 to-emerald-600 mx-auto rounded-full mt-6"></div>
@@ -52,8 +52,8 @@ export default function Contact() {
 
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-serif text-gray-800 mb-6">Let's Connect</h3>
-            <p className="text-gray-700 mb-8 leading-relaxed">
+            <h3 className="text-2xl text-gray-900 mb-6 font-semibold">Let's Connect</h3>
+            <p className="text-gray-800 mb-8 leading-relaxed">
               Whether you're seeking clarity through tarot, wanting to commission a spirit painting,
               or curious about intuitive guidance, I'm here to help. Fill out the form and I'll
               respond within 24-48 hours.
@@ -65,34 +65,34 @@ export default function Contact() {
                   <Mail className="text-pink-600" size={24} />
                 </div>
                 <div className="ml-4">
-                  <h4 className="font-medium text-gray-800 mb-1">Email Me</h4>
-                  <p className="text-gray-600">hello@whisperedmusings.com</p>
+                  <h4 className="font-semibold text-gray-900 mb-1">Email Me</h4>
+                  <p className="text-gray-700">hello@whisperedmusings.com</p>
                 </div>
               </div>
 
               <div className="flex items-start">
-                <div className="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center flex-shrink-0">
-                  <MessageCircle className="text-amber-600" size={24} />
+                <div className="w-12 h-12 rounded-full bg-amber-200 flex items-center justify-center flex-shrink-0">
+                  <MessageCircle className="text-amber-700" size={24} />
                 </div>
                 <div className="ml-4">
-                  <h4 className="font-medium text-gray-800 mb-1">DM for Inquiry</h4>
-                  <p className="text-gray-600">Connect with me on social media</p>
+                  <h4 className="font-semibold text-gray-900 mb-1">DM for Inquiry</h4>
+                  <p className="text-gray-700">Connect with me on social media</p>
                 </div>
               </div>
             </div>
 
-            <div className="mt-8 p-6 bg-gradient-to-br from-pink-50 to-amber-50 rounded-xl border-2 border-amber-200">
-              <h4 className="font-serif text-xl text-gray-800 mb-3">Special Offer</h4>
-              <p className="text-gray-700 mb-2">30-minute session: $45</p>
-              <p className="text-gray-700 mb-2">60-minute session: $90</p>
-              <p className="text-sm text-gray-600 mt-4">Limited slots available monthly</p>
+            <div className="mt-8 p-6 bg-white rounded-xl border-2 border-amber-300 shadow-md">
+              <h4 className="text-xl text-gray-900 mb-3 font-semibold">Special Offer</h4>
+              <p className="text-gray-800 mb-2 font-medium">30-minute session: $45</p>
+              <p className="text-gray-800 mb-2 font-medium">60-minute session: $90</p>
+              <p className="text-sm text-gray-700 mt-4">Limited slots available monthly</p>
             </div>
           </div>
 
           <div>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
+                <label htmlFor="name" className="block text-gray-900 font-semibold mb-2">
                   Your Name
                 </label>
                 <input
@@ -102,7 +102,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-amber-500 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-amber-600 focus:ring-2 focus:ring-amber-200 focus:outline-none transition-colors bg-white"
                   placeholder="Enter your name"
                 />
               </div>
@@ -118,7 +118,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-amber-500 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-amber-600 focus:ring-2 focus:ring-amber-200 focus:outline-none transition-colors bg-white"
                   placeholder="your@email.com"
                 />
               </div>
@@ -133,7 +133,7 @@ export default function Contact() {
                   value={formData.service}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-amber-500 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-amber-600 focus:ring-2 focus:ring-amber-200 focus:outline-none transition-colors bg-white"
                 >
                   <option value="">Select a service</option>
                   <option value="tarot">Tarot Reading</option>

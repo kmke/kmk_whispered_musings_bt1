@@ -2,53 +2,53 @@ import { Star } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Sarah Mitchell',
-    text: 'Maira\'s reading was incredibly accurate and insightful. She helped me see my situation from a new perspective and gave me the clarity I desperately needed. Her warm energy made me feel completely at ease.',
+    name: 'Client A',
+    text: 'Placeholder testimonial text for demonstration purposes. This represents the type of feedback you might receive from satisfied clients.',
     rating: 5,
   },
   {
-    name: 'Emily Rodriguez',
-    text: 'The spirit painting Maira created for me brought tears to my eyes. She captured something so profound about my journey that I couldn\'t put into words. It hangs in my meditation space and brings me peace every day.',
+    name: 'Client B',
+    text: 'Sample review content showing the structure and format of client testimonials that would appear on this website.',
     rating: 5,
   },
   {
-    name: 'Jessica Chen',
-    text: 'I was skeptical at first, but Maira\'s intuitive reading changed my perspective entirely. She connected with things she couldn\'t have possibly known and provided guidance that resonated deeply with my soul. Highly recommend!',
+    name: 'Client C',
+    text: 'Non-review placeholder demonstrating the layout and design elements used for client feedback sections.',
     rating: 5,
   },
   {
-    name: 'Amanda Thompson',
-    text: 'Maira has a true gift. Her tarot readings are not only accurate but delivered with such compassion and wisdom. She helped me navigate a difficult time and I\'m forever grateful for her guidance.',
+    name: 'Client D',
+    text: 'Template testimonial content illustrating the visual presentation of client reviews and satisfaction ratings.',
     rating: 5,
   },
   {
-    name: 'Lisa Patel',
-    text: 'Working with Maira was a transformative experience. Her intuitive abilities are remarkable, and she has a way of making you feel seen and understood. The insights I gained have helped me move forward with confidence.',
+    name: 'Client E',
+    text: 'Example placeholder text showing how testimonials would be displayed with star ratings and client information.',
     rating: 5,
   },
   {
-    name: 'Rachel Foster',
-    text: 'The combination of Maira\'s artistic talent and spiritual insight is truly magical. My spirit painting is not just beautiful art—it\'s a powerful tool for meditation and self-reflection. Thank you, Maira!',
+    name: 'Client F',
+    text: 'Demonstration content representing the format and style of client feedback that appears in this section.',
     rating: 5,
   },
 ];
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-24 bg-gradient-to-br from-emerald-50 via-white to-pink-50 relative overflow-hidden">
-      <div className="absolute inset-0 opacity-5">
+    <section id="testimonials" className="py-24 bg-pink-200 relative overflow-hidden">
+      <div className="absolute inset-0 opacity-3">
         <svg className="w-full h-full" viewBox="0 0 800 800">
-          <circle cx="400" cy="400" r="300" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="2" />
+          <circle cx="400" cy="400" r="300" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" />
         </svg>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-serif text-gray-800 mb-4">
-            Client <span className="text-amber-600">Testimonials</span>
+          <h2 className="text-4xl sm:text-5xl text-gray-900 mb-4 font-semibold">
+            Sample <span className="text-amber-600">Feedback</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Hear from those who have experienced the transformative power of spiritual guidance
+          <p className="text-xl text-gray-800 max-w-2xl mx-auto">
+            Placeholder content demonstrating the testimonial section layout and design
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-300 via-amber-500 to-emerald-600 mx-auto rounded-full mt-6"></div>
         </div>
@@ -57,23 +57,23 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-amber-100 transform hover:-translate-y-1"
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-amber-200 transform hover:-translate-y-1"
             >
               <div className="flex mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="text-amber-500 fill-current" size={20} />
                 ))}
               </div>
-              <p className="text-gray-700 leading-relaxed mb-6 italic">
+              <p className="text-gray-800 leading-relaxed mb-6 italic">
                 "{testimonial.text}"
               </p>
               <div className="flex items-center">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-pink-200 to-amber-200 flex items-center justify-center text-amber-700 font-serif text-xl">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-pink-300 to-amber-300 flex items-center justify-center text-white text-xl font-semibold">
                   {testimonial.name.charAt(0)}
                 </div>
                 <div className="ml-4">
-                  <p className="font-medium text-gray-800">{testimonial.name}</p>
-                  <p className="text-sm text-gray-500">Verified Client</p>
+                  <p className="font-semibold text-gray-900">{testimonial.name}</p>
+                  <p className="text-sm text-gray-600">Placeholder</p>
                 </div>
               </div>
             </div>
@@ -81,14 +81,14 @@ export default function Testimonials() {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="bg-white rounded-2xl p-8 inline-block shadow-lg border-2 border-emerald-200">
-            <h3 className="text-2xl font-serif text-gray-800 mb-4">Ready to Begin Your Journey?</h3>
-            <p className="text-gray-700 mb-6 max-w-xl">
-              Join countless others who have discovered clarity, peace, and spiritual insight through my services
+          <div className="bg-white rounded-2xl p-8 inline-block shadow-lg border-2 border-amber-300">
+            <h3 className="text-2xl text-gray-900 mb-4 font-semibold">Ready to Begin Your Journey?</h3>
+            <p className="text-gray-800 mb-6 max-w-xl">
+              Experience the transformative power of spiritual guidance and intuitive insights
             </p>
             <a
               href="#contact"
-              className="inline-block bg-emerald-700 text-white px-8 py-3 rounded-full hover:bg-emerald-800 transition-colors duration-200 font-medium shadow-lg"
+              className="inline-block bg-amber-600 text-white px-8 py-3 rounded-full hover:bg-amber-700 transition-colors duration-200 font-medium shadow-lg"
             >
               Book Your Session
             </a>

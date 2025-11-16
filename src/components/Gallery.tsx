@@ -44,20 +44,20 @@ export default function Gallery() {
   const [selectedPainting, setSelectedPainting] = useState<typeof paintings[0] | null>(null);
 
   return (
-    <section id="gallery" className="py-24 bg-white relative overflow-hidden">
-      <div className="absolute inset-0 opacity-5">
+    <section id="gallery" className="py-24 bg-pink-100 relative overflow-hidden">
+      <div className="absolute inset-0 opacity-3">
         <svg className="w-full h-full" viewBox="0 0 800 400">
-          <circle cx="200" cy="200" r="150" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="1" />
-          <circle cx="600" cy="200" r="150" fill="none" stroke="rgb(5, 102, 55)" strokeWidth="1" />
+          <circle cx="200" cy="200" r="150" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" />
+          <circle cx="600" cy="200" r="150" fill="none" stroke="rgb(5, 102, 55)" strokeWidth="0.5" />
         </svg>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-serif text-gray-800 mb-4">
+          <h2 className="text-4xl sm:text-5xl text-gray-900 mb-4 font-semibold">
             Spirit <span className="text-amber-600">Paintings</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-800 max-w-2xl mx-auto">
             Each painting is a unique channeling of spiritual energy, created with intention and divine guidance
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-300 via-amber-500 to-emerald-600 mx-auto rounded-full mt-6"></div>
@@ -80,7 +80,7 @@ export default function Gallery() {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h3 className="text-xl font-serif mb-2">{painting.title}</h3>
+                    <h3 className="text-xl mb-2">{painting.title}</h3>
                     <p className="text-sm opacity-90">{painting.description}</p>
                   </div>
                 </div>
@@ -90,9 +90,9 @@ export default function Gallery() {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-pink-50 via-amber-50 to-emerald-50 rounded-2xl p-8 inline-block shadow-lg border-2 border-amber-200">
-            <h3 className="text-2xl font-serif text-gray-800 mb-4">Commission Your Spirit Painting</h3>
-            <p className="text-gray-700 mb-6 max-w-xl">
+          <div className="bg-white rounded-2xl p-8 inline-block shadow-lg border-2 border-amber-300">
+            <h3 className="text-2xl text-gray-900 mb-4 font-semibold">Commission Your Spirit Painting</h3>
+            <p className="text-gray-800 mb-6 max-w-xl">
               Let me create a personalized spirit painting that captures your unique energy and spiritual essence
             </p>
             <a
@@ -123,7 +123,7 @@ export default function Gallery() {
               className="w-full h-auto rounded-lg shadow-2xl"
             />
             <div className="text-center mt-6 text-white">
-              <h3 className="text-3xl font-serif mb-3">{selectedPainting.title}</h3>
+              <h3 className="text-3xl mb-3">{selectedPainting.title}</h3>
               <p className="text-lg">{selectedPainting.description}</p>
             </div>
           </div>

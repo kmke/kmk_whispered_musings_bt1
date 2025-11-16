@@ -14,27 +14,16 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+    <header className="fixed top-0 w-full bg-pink-200/95 backdrop-blur-sm shadow-sm z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="flex-shrink-0">
-            <a href="#home" className="flex items-center space-x-2">
-              <div className="w-12 h-12 rounded-full border-2 border-amber-600 flex items-center justify-center">
-                <span className="text-amber-600 text-2xl font-serif italic">M</span>
-              </div>
-              <div className="hidden sm:block">
-                <div className="text-xl font-serif text-amber-600">Whispered Musings</div>
-                <div className="text-xs text-gray-600">Maira Kearns</div>
-              </div>
-            </a>
-          </div>
 
           <div className="hidden md:flex space-x-8">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-gray-700 hover:text-amber-600 transition-colors duration-200 font-medium"
+                className="text-gray-900 hover:text-amber-600 transition-colors duration-200 font-semibold"
               >
                 {link.name}
               </a>
@@ -52,7 +41,7 @@ export default function Header() {
 
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-md text-gray-700 hover:text-amber-600 hover:bg-gray-100"
+            className="md:hidden p-2 rounded-md text-gray-900 hover:text-amber-600 hover:bg-pink-100"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -66,7 +55,7 @@ export default function Header() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="text-gray-700 hover:text-amber-600 transition-colors duration-200 font-medium py-2"
+                  className="text-gray-900 hover:text-amber-600 transition-colors duration-200 font-semibold py-2"
                 >
                   {link.name}
                 </a>

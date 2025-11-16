@@ -2,11 +2,11 @@ import { Heart, Palette, Sparkles } from 'lucide-react';
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-white relative overflow-hidden">
-      <div className="absolute inset-0 opacity-5">
+    <section id="about" className="py-24 bg-pink-100 relative overflow-hidden">
+      <div className="absolute inset-0 opacity-3">
         <svg className="w-full h-full" viewBox="0 0 800 400">
-          <circle cx="100" cy="200" r="150" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="1" />
-          <circle cx="700" cy="200" r="150" fill="none" stroke="rgb(5, 102, 55)" strokeWidth="1" />
+          <circle cx="100" cy="200" r="150" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" />
+          <circle cx="700" cy="200" r="150" fill="none" stroke="rgb(5, 102, 55)" strokeWidth="0.5" />
         </svg>
       </div>
 
@@ -17,7 +17,7 @@ export default function About() {
               <Heart className="text-amber-600" size={32} />
             </div>
           </div>
-          <h2 className="text-4xl sm:text-5xl font-serif text-gray-800 mb-4">
+          <h2 className="text-4xl sm:text-5xl text-gray-900 mb-4 font-semibold">
             About <span className="text-amber-600">Maira</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-300 via-amber-500 to-emerald-600 mx-auto rounded-full"></div>
@@ -39,34 +39,34 @@ export default function About() {
           </div>
 
           <div className="space-y-6">
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-800 leading-relaxed">
               Welcome, dear soul. I'm Maira Kearns, and I believe that every person carries
               a unique story written in the stars, whispered by the universe, and waiting
               to be unveiled.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-800 leading-relaxed">
               My journey into the mystical arts began years ago when I discovered the
               profound connection between intuition, art, and the divine messages that
               surround us. Through tarot, I've learned to read the language of the soul.
               Through painting, I've discovered how to channel spiritual energy into
               visual form.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-800 leading-relaxed">
               Each reading I offer is more than a glimpse into your future—it's a
               conversation with your higher self. Each painting I create is more than
               art—it's a manifestation of spiritual energy and personal truth.
             </p>
 
             <div className="grid grid-cols-2 gap-6 pt-8">
-              <div className="text-center p-6 bg-pink-50 rounded-xl">
+              <div className="text-center p-6 bg-white/80 rounded-xl border-2 border-amber-200 shadow-md">
                 <Palette className="text-amber-600 mx-auto mb-3" size={32} />
-                <h3 className="font-serif text-xl text-gray-800 mb-2">Spirit Painter</h3>
-                <p className="text-sm text-gray-600">Channeling energy into art</p>
+                <h3 className="text-xl text-gray-900 mb-2 font-semibold">Spirit Painter</h3>
+                <p className="text-sm text-gray-700">Channeling energy into art</p>
               </div>
-              <div className="text-center p-6 bg-emerald-50 rounded-xl">
+              <div className="text-center p-6 bg-white/80 rounded-xl border-2 border-emerald-200 shadow-md">
                 <Sparkles className="text-emerald-700 mx-auto mb-3" size={32} />
-                <h3 className="font-serif text-xl text-gray-800 mb-2">Intuitive Guide</h3>
-                <p className="text-sm text-gray-600">Reading the soul's whispers</p>
+                <h3 className="text-xl text-gray-900 mb-2 font-semibold">Intuitive Guide</h3>
+                <p className="text-sm text-gray-700">Reading the soul's whispers</p>
               </div>
             </div>
           </div>
