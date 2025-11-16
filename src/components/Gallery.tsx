@@ -116,11 +116,11 @@ export default function Gallery() {
           >
             <X size={32} />
           </button>
-          <div className="max-w-4xl w-full">
+          <div className="max-w-4xl w-full px-4">
             <img
               src={selectedPainting.image}
               alt={selectedPainting.title}
-              className="w-full h-auto rounded-lg shadow-2xl"
+              className="w-full max-w-sm sm:max-w-md md:max-w-full mx-auto h-auto rounded-lg shadow-2xl"
             />
             <div className="text-center mt-6 text-white">
               <h3 className="text-3xl mb-3">{selectedPainting.title}</h3>

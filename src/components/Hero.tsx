@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-pink-200">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-pink-100">
       <div className="absolute inset-0 opacity-10">
         <svg className="w-full h-full" viewBox="0 0 800 800">
           <circle
@@ -20,9 +20,9 @@ export default function Hero() {
           {/* Left side - Image */}
           <div className="flex justify-center md:justify-start">
             <img
-              src="/image.png"
+              src="/trans_background.png"
               alt="Maira Kearns"
-              className="w-full max-w-md h-auto"
+              className="w-full max-w-xs sm:max-w-sm md:max-w-md h-auto"
             />
           </div>
 

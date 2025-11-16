@@ -35,7 +35,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-24 bg-pink-200 relative overflow-hidden">
+    <section id="testimonials" className="py-24 bg-pink-100 relative overflow-hidden">
       <div className="absolute inset-0 opacity-3">
         <svg className="w-full h-full" viewBox="0 0 800 800">
           <circle cx="400" cy="400" r="300" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" />

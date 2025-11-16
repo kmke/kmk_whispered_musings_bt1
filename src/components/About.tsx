@@ -25,7 +25,7 @@ export default function About() {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="relative">
+            <div className="relative max-w-sm mx-auto md:max-w-none">
               <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="https://images.pexels.com/photos/6224386/pexels-photo-6224386.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -33,8 +33,8 @@ export default function About() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-pink-200 to-amber-200 rounded-full -z-10"></div>
-              <div className="absolute -top-6 -left-6 w-24 h-24 bg-gradient-to-br from-emerald-200 to-pink-200 rounded-full -z-10"></div>
+              <div className="absolute -bottom-6 -right-6 w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-pink-200 to-amber-200 rounded-full -z-10"></div>
+              <div className="absolute -top-6 -left-6 w-16 h-16 md:w-24 md:h-24 bg-gradient-to-br from-emerald-200 to-pink-200 rounded-full -z-10"></div>
             </div>
           </div>
 

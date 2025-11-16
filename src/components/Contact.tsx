@@ -14,14 +14,38 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitMessage('');
 
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    try {
+      // Get your access key from https://web3forms.com
+      // Replace 'YOUR_ACCESS_KEY' with your actual Web3Forms access key
+      const formDataToSend = new FormData();
+      formDataToSend.append('access_key', '4cc06005-b260-446f-b77f-41d36c84ebc1');
+      formDataToSend.append('name', formData.name);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('subject', `New Inquiry: ${formData.service || 'General'}`);
+      formDataToSend.append('message', `Service Interest: ${formData.service}\n\n${formData.message}`);
+      formDataToSend.append('from_name', 'Whispered Musings Contact Form');
 
-    setSubmitMessage('Thank you for reaching out! I\'ll be in touch soon.');
-    setFormData({ name: '', email: '', service: '', message: '' });
-    setIsSubmitting(false);
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formDataToSend,
+      });
 
-    setTimeout(() => setSubmitMessage(''), 5000);
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitMessage('Thank you for reaching out! I\'ll be in touch soon.');
+        setFormData({ name: '', email: '', service: '', message: '' });
+      } else {
+        throw new Error(result.message || 'Form submission failed');
+      }
+    } catch (error) {
+      setSubmitMessage('Sorry, there was an error sending your message. Please try again or email me directly.');
+    } finally {
+      setIsSubmitting(false);
+      setTimeout(() => setSubmitMessage(''), 5000);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -108,7 +132,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
+                <label htmlFor="email" className="block text-gray-900 font-semibold mb-2">
                   Email Address
                 </label>
                 <input
@@ -124,7 +148,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="service" className="block text-gray-700 font-medium mb-2">
+                <label htmlFor="service" className="block text-gray-900 font-semibold mb-2">
                   Service of Interest
                 </label>
                 <select
@@ -144,7 +168,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
+                <label htmlFor="message" className="block text-gray-900 font-semibold mb-2">
                   Your Message
                 </label>
                 <textarea
@@ -154,7 +178,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-amber-500 focus:outline-none transition-colors resize-none"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-amber-600 focus:ring-2 focus:ring-amber-200 focus:outline-none transition-colors resize-none bg-white"
                   placeholder="Tell me about what you're seeking..."
                 ></textarea>
               </div>
@@ -175,7 +199,11 @@ export default function Contact() {
               </button>
 
               {submitMessage && (
-                <div className="text-center text-emerald-700 bg-emerald-50 py-3 rounded-lg border-2 border-emerald-200">
+                <div className={`text-center py-3 rounded-lg border-2 ${
+                  submitMessage.includes('error') || submitMessage.includes('Sorry')
+                    ? 'text-red-700 bg-red-50 border-red-200'
+                    : 'text-emerald-700 bg-emerald-50 border-emerald-200'
+                }`}>
                   {submitMessage}
                 </div>
               )}
