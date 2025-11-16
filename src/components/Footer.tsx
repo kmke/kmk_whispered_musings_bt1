@@ -44,6 +44,12 @@ export default function Footer() {
           </div>
         </div>
 
+        <div className="border-t border-gray-300 pt-6 mb-6">
+          <p className="text-gray-600 text-xs leading-relaxed max-w-4xl">
+            All services provided by Whispered Musings are exploratory and expressive in nature. No specific outcomes or predictions are guaranteed. These offerings are not a substitute for professional medical, psychological, legal, or financial advice. Clients assume full responsibility for their personal choices, actions, and interpretations.
+          </p>
+        </div>
+
         <div className="border-t border-gray-300 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-gray-700 text-sm mb-4 sm:mb-0">
             &copy; {new Date().getFullYear()} Whispered Musings. All rights reserved.
