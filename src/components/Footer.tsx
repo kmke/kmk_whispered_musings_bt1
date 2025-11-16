@@ -9,7 +9,7 @@ export default function Footer() {
         </svg>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 relative">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <div className="mb-4">

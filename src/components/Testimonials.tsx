@@ -48,22 +48,22 @@ export default function Testimonials() {
         </svg>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl text-gray-900 mb-4 font-semibold">
+      <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 relative">
+        <div className="text-center mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl text-gray-900 mb-3 sm:mb-4 font-semibold px-2 sm:px-0">
             Sample <span className="text-gold-600">Feedback</span>
           </h2>
-          <p className="text-xl text-gray-800 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-800 max-w-2xl mx-auto px-2 sm:px-0">
             Placeholder content demonstrating the testimonial section layout and design
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-300 via-gold-500 to-emerald-600 mx-auto rounded-full mt-6"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-gold-200 transform hover:-translate-y-1"
+              className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-gold-200 transform hover:-translate-y-1"
             >
               <div className="flex mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
@@ -94,7 +94,7 @@ export default function Testimonials() {
             </p>
             <a
               href="#contact"
-              className="inline-block bg-gold-600 text-white px-8 py-3 rounded-full hover:bg-gold-700 transition-colors duration-200 font-medium shadow-lg"
+              className="inline-block bg-gold-600 text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full hover:bg-gold-700 transition-colors duration-200 font-medium text-sm sm:text-base shadow-lg"
             >
               Book Your Session
             </a>

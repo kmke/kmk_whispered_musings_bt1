@@ -55,18 +55,18 @@ export default function Services() {
         </svg>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl text-gray-900 mb-4 font-semibold">
+      <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 relative">
+        <div className="text-center mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl text-gray-900 mb-3 sm:mb-4 font-semibold px-2 sm:px-0">
             My <span className="text-gold-600">Services</span>
           </h2>
-          <p className="text-xl text-gray-800 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-800 max-w-2xl mx-auto px-2 sm:px-0">
             Each service is a sacred journey designed to illuminate your path and connect you with your highest self
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-300 via-gold-500 to-emerald-600 mx-auto rounded-full mt-6"></div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {services.map((service, index) => {
             const Icon = service.icon;
             const iconColor = service.color === 'pink' ? 'text-pink-600' : service.color === 'gold' ? 'text-gold-600' : 'text-emerald-700';
@@ -75,14 +75,14 @@ export default function Services() {
             return (
               <div
                 key={index}
-                className={`bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 ${borderColor} transform hover:-translate-y-2`}
+                className={`bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 ${borderColor} transform hover:-translate-y-2`}
               >
                 <div className="mb-6">
                   <div className={`w-16 h-16 rounded-full ${iconColor} bg-white flex items-center justify-center mb-4 shadow-md`}>
                     <Icon size={32} />
                   </div>
-                  <h3 className="text-2xl text-gray-900 mb-3 font-semibold">{service.title}</h3>
-                  <p className="text-gray-800 leading-relaxed">{service.description}</p>
+                  <h3 className="text-xl sm:text-2xl text-gray-900 mb-2 sm:mb-3 font-semibold">{service.title}</h3>
+                  <p className="text-sm sm:text-base text-gray-800 leading-relaxed">{service.description}</p>
                 </div>
 
                 <ul className="space-y-3 mb-6">
@@ -98,7 +98,7 @@ export default function Services() {
 
                 <a
                   href="#contact"
-                  className="block text-center bg-gold-50 text-gray-900 px-6 py-3 rounded-full hover:bg-gold-100 transition-colors duration-200 font-medium shadow-md border-2 border-gold-300"
+                  className="block text-center bg-gold-50 text-gray-900 px-4 py-2 sm:px-6 sm:py-3 rounded-full hover:bg-gold-100 transition-colors duration-200 font-medium text-sm sm:text-base shadow-md border-2 border-gold-300"
                 >
                   Learn More
                 </a>
@@ -115,7 +115,7 @@ export default function Services() {
           </p>
           <a
             href="#contact"
-            className="inline-block bg-gold-600 text-white px-8 py-3 rounded-full hover:bg-gold-700 transition-colors duration-200 font-medium shadow-lg"
+            className="inline-block bg-gold-600 text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full hover:bg-gold-700 transition-colors duration-200 font-medium text-sm sm:text-base shadow-lg"
           >
             Get in Touch
           </a>

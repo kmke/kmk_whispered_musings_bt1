@@ -69,21 +69,21 @@ export default function Contact() {
         </svg>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl text-gray-900 mb-4 font-semibold">
+      <div className="max-w-6xl mx-auto px-6 sm:px-6 lg:px-8 relative">
+        <div className="text-center mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl text-gray-900 mb-3 sm:mb-4 font-semibold px-2 sm:px-0">
             Get in <span className="text-gold-600">Touch</span>
           </h2>
-          <p className="text-xl text-gray-800 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-800 max-w-2xl mx-auto px-2 sm:px-0">
             Ready to begin your spiritual journey? I'd love to hear from you.
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-300 via-gold-500 to-emerald-600 mx-auto rounded-full mt-6"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div>
-            <h3 className="text-2xl text-gray-900 mb-6 font-semibold">Let's Connect</h3>
-            <p className="text-gray-800 mb-8 leading-relaxed">
+            <h3 className="text-xl sm:text-2xl text-gray-900 mb-4 sm:mb-6 font-semibold">Let's Connect</h3>
+            <p className="text-sm sm:text-base text-gray-800 mb-6 sm:mb-8 leading-relaxed">
               Whether you're seeking clarity through tarot, wanting to commission a spirit painting,
               or curious about intuitive guidance, I'm here to help. Fill out the form and I'll
               respond within 24-48 hours.
@@ -190,7 +190,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gold-600 text-white px-8 py-4 rounded-full hover:bg-gold-700 transition-all duration-200 font-medium text-lg shadow-lg hover:shadow-xl transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+                className="w-full bg-gold-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full hover:bg-gold-700 transition-all duration-200 font-medium text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
               >
                 {isSubmitting ? (
                   'Sending...'
