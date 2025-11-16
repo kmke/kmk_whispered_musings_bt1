@@ -44,23 +44,28 @@ export default function Gallery() {
   const [selectedPainting, setSelectedPainting] = useState<typeof paintings[0] | null>(null);
 
   return (
-    <section id="gallery" className="py-24 bg-pink-100 relative overflow-hidden">
+    <section id="gallery" className="py-24 bg-white relative overflow-hidden">
       <div className="absolute inset-0 opacity-3">
         <svg className="w-full h-full" viewBox="0 0 800 400">
           <circle cx="200" cy="200" r="150" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" />
           <circle cx="600" cy="200" r="150" fill="none" stroke="rgb(5, 102, 55)" strokeWidth="0.5" />
+          <circle cx="400" cy="100" r="80" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.5" />
+          <circle cx="100" cy="300" r="100" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.4" />
+          <circle cx="700" cy="300" r="90" fill="none" stroke="rgb(5, 102, 55)" strokeWidth="0.5" opacity="0.4" />
+          <path d="M 50 150 Q 200 100, 350 150 T 650 150" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.3" />
+          <path d="M 150 350 Q 400 300, 650 350" fill="none" stroke="rgb(5, 102, 55)" strokeWidth="0.5" opacity="0.3" />
         </svg>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl text-gray-900 mb-4 font-semibold">
-            Spirit <span className="text-amber-600">Paintings</span>
+            Spirit <span className="text-gold-600">Paintings</span>
           </h2>
           <p className="text-xl text-gray-800 max-w-2xl mx-auto">
             Each painting is a unique channeling of spiritual energy, created with intention and divine guidance
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-pink-300 via-amber-500 to-emerald-600 mx-auto rounded-full mt-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-pink-300 via-gold-500 to-emerald-600 mx-auto rounded-full mt-6"></div>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -90,14 +95,14 @@ export default function Gallery() {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="bg-white rounded-2xl p-8 inline-block shadow-lg border-2 border-amber-300">
+          <div className="bg-white rounded-2xl p-8 inline-block shadow-lg border-2 border-gold-300">
             <h3 className="text-2xl text-gray-900 mb-4 font-semibold">Commission Your Spirit Painting</h3>
             <p className="text-gray-800 mb-6 max-w-xl">
               Let me create a personalized spirit painting that captures your unique energy and spiritual essence
             </p>
             <a
               href="#contact"
-              className="inline-block bg-amber-600 text-white px-8 py-3 rounded-full hover:bg-amber-700 transition-colors duration-200 font-medium shadow-lg"
+              className="inline-block bg-gold-600 text-white px-8 py-3 rounded-full hover:bg-gold-700 transition-colors duration-200 font-medium shadow-lg"
             >
               Request a Commission
             </a>
@@ -111,7 +116,7 @@ export default function Gallery() {
           onClick={() => setSelectedPainting(null)}
         >
           <button
-            className="absolute top-4 right-4 text-white hover:text-amber-400 transition-colors"
+            className="absolute top-4 right-4 text-white hover:text-gold-400 transition-colors"
             onClick={() => setSelectedPainting(null)}
           >
             <X size={32} />

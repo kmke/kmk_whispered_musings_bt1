@@ -1,17 +1,15 @@
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-pink-100">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
       <div className="absolute inset-0 opacity-10">
         <svg className="w-full h-full" viewBox="0 0 800 800">
-          <circle
-            cx="400"
-            cy="400"
-            r="300"
-            fill="none"
-            stroke="rgb(217, 119, 6)"
-            strokeWidth="0.5"
-            opacity="0.4"
-          />
+          <circle cx="400" cy="400" r="300" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.4" />
+          <circle cx="150" cy="150" r="120" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.3" />
+          <circle cx="650" cy="200" r="100" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.3" />
+          <circle cx="200" cy="650" r="140" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.3" />
+          <circle cx="700" cy="700" r="110" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.3" />
+          <path d="M 100 400 Q 200 300, 300 400 T 500 400" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.2" />
+          <path d="M 500 200 Q 600 100, 700 200 T 750 200" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.2" />
         </svg>
       </div>
 
@@ -28,7 +26,7 @@ export default function Hero() {
 
           {/* Right side - Text content */}
           <div className="text-center md:text-left">
-            <h1 className="text-5xl sm:text-6xl lg:text-8xl text-amber-600 mb-4 font-script">
+            <h1 className="text-5xl sm:text-6xl lg:text-8xl text-gold-600 mb-4 font-script">
               Whispered Musings
             </h1>
 
@@ -44,13 +42,13 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center mb-12">
               <a
                 href="#services"
-                className="bg-amber-600 text-white px-8 py-4 rounded-full hover:bg-amber-700 transition-all duration-200 font-medium text-lg shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="bg-gold-600 text-white px-8 py-4 rounded-full hover:bg-gold-700 transition-all duration-200 font-medium text-lg shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 Explore My Services
               </a>
               <a
                 href="#gallery"
-                className="border-2 border-amber-600 text-amber-700 px-8 py-4 rounded-full hover:bg-amber-600 hover:text-white transition-all duration-200 font-medium text-lg shadow-md"
+                className="border-2 border-gold-600 text-gold-700 px-8 py-4 rounded-full hover:bg-gold-600 hover:text-white transition-all duration-200 font-medium text-lg shadow-md"
               >
                 View Spirit Paintings
               </a>
@@ -58,17 +56,17 @@ export default function Hero() {
 
             <div className="flex justify-center md:justify-start space-x-8 text-center">
               <div>
-                <div className="text-3xl text-amber-700 mb-2 font-semibold">Tarot</div>
+                <div className="text-3xl text-gold-700 mb-2 font-semibold">Tarot</div>
                 <p className="text-sm text-gray-900 font-medium">Readings</p>
               </div>
               <div className="w-px bg-gray-500"></div>
               <div>
-                <div className="text-3xl text-amber-700 mb-2 font-semibold">Spirit</div>
+                <div className="text-3xl text-gold-700 mb-2 font-semibold">Spirit</div>
                 <p className="text-sm text-gray-900 font-medium">Paintings</p>
               </div>
               <div className="w-px bg-gray-500"></div>
               <div>
-                <div className="text-3xl text-amber-700 mb-2 font-semibold">Intuitive</div>
+                <div className="text-3xl text-gold-700 mb-2 font-semibold">Intuitive</div>
                 <p className="text-sm text-gray-900 font-medium">Guidance</p>
               </div>
             </div>

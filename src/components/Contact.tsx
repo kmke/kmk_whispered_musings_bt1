@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, MessageCircle, Send } from 'lucide-react';
+import { Instagram, Send } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -56,22 +56,28 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-pink-100 relative overflow-hidden">
+    <section id="contact" className="py-24 bg-white relative overflow-hidden">
       <div className="absolute inset-0 opacity-3">
         <svg className="w-full h-full" viewBox="0 0 800 800">
           <circle cx="400" cy="400" r="350" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" strokeDasharray="5,5" />
+          <circle cx="150" cy="150" r="120" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.5" />
+          <circle cx="650" cy="200" r="100" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.5" />
+          <circle cx="200" cy="650" r="140" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.5" />
+          <circle cx="700" cy="700" r="110" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.5" />
+          <path d="M 100 400 Q 250 300, 400 400 T 700 400" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.3" strokeDasharray="5,5" />
+          <path d="M 150 600 Q 400 500, 650 600" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.3" />
         </svg>
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl text-gray-900 mb-4 font-semibold">
-            Get in <span className="text-amber-600">Touch</span>
+            Get in <span className="text-gold-600">Touch</span>
           </h2>
           <p className="text-xl text-gray-800 max-w-2xl mx-auto">
             Ready to begin your spiritual journey? I'd love to hear from you.
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-pink-300 via-amber-500 to-emerald-600 mx-auto rounded-full mt-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-pink-300 via-gold-500 to-emerald-600 mx-auto rounded-full mt-6"></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -85,27 +91,25 @@ export default function Contact() {
 
             <div className="space-y-6">
               <div className="flex items-start">
-                <div className="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center flex-shrink-0">
-                  <Mail className="text-pink-600" size={24} />
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-pink-500 via-purple-500 to-gold-500 flex items-center justify-center flex-shrink-0">
+                  <Instagram className="text-white" size={24} />
                 </div>
                 <div className="ml-4">
-                  <h4 className="font-semibold text-gray-900 mb-1">Email Me</h4>
-                  <p className="text-gray-700">hello@whisperedmusings.com</p>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <div className="w-12 h-12 rounded-full bg-amber-200 flex items-center justify-center flex-shrink-0">
-                  <MessageCircle className="text-amber-700" size={24} />
-                </div>
-                <div className="ml-4">
-                  <h4 className="font-semibold text-gray-900 mb-1">DM for Inquiry</h4>
-                  <p className="text-gray-700">Connect with me on social media</p>
+                  <h4 className="font-semibold text-gray-900 mb-1">Follow on Instagram</h4>
+                  <a 
+                    href="https://www.instagram.com/whisperedmusings888" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-gold-600 hover:text-gold-700 font-medium"
+                  >
+                    @whisperedmusings888
+                  </a>
+                  <p className="text-gray-700 mt-2 text-sm">Connect with me on Instagram for daily insights, tarot readings, spirit paintings, and spiritual guidance. DM me for inquiries about readings or commissions!</p>
                 </div>
               </div>
             </div>
 
-            <div className="mt-8 p-6 bg-white rounded-xl border-2 border-amber-300 shadow-md">
+            <div className="mt-8 p-6 bg-white rounded-xl border-2 border-gold-300 shadow-md">
               <h4 className="text-xl text-gray-900 mb-3 font-semibold">Special Offer</h4>
               <p className="text-gray-800 mb-2 font-medium">30-minute session: $45</p>
               <p className="text-gray-800 mb-2 font-medium">60-minute session: $90</p>
@@ -126,7 +130,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-amber-600 focus:ring-2 focus:ring-amber-200 focus:outline-none transition-colors bg-white"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-gold-600 focus:ring-2 focus:ring-gold-200 focus:outline-none transition-colors bg-white"
                   placeholder="Enter your name"
                 />
               </div>
@@ -142,7 +146,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-amber-600 focus:ring-2 focus:ring-amber-200 focus:outline-none transition-colors bg-white"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-gold-600 focus:ring-2 focus:ring-gold-200 focus:outline-none transition-colors bg-white"
                   placeholder="your@email.com"
                 />
               </div>
@@ -157,7 +161,7 @@ export default function Contact() {
                   value={formData.service}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-amber-600 focus:ring-2 focus:ring-amber-200 focus:outline-none transition-colors bg-white"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-gold-600 focus:ring-2 focus:ring-gold-200 focus:outline-none transition-colors bg-white"
                 >
                   <option value="">Select a service</option>
                   <option value="tarot">Tarot Reading</option>
@@ -178,7 +182,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-amber-600 focus:ring-2 focus:ring-amber-200 focus:outline-none transition-colors resize-none bg-white"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-gold-600 focus:ring-2 focus:ring-gold-200 focus:outline-none transition-colors resize-none bg-white"
                   placeholder="Tell me about what you're seeking..."
                 ></textarea>
               </div>
@@ -186,7 +190,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-amber-600 text-white px-8 py-4 rounded-full hover:bg-amber-700 transition-all duration-200 font-medium text-lg shadow-lg hover:shadow-xl transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+                className="w-full bg-gold-600 text-white px-8 py-4 rounded-full hover:bg-gold-700 transition-all duration-200 font-medium text-lg shadow-lg hover:shadow-xl transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
               >
                 {isSubmitting ? (
                   'Sending...'

@@ -2,25 +2,30 @@ import { Heart, Palette, Sparkles } from 'lucide-react';
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-pink-100 relative overflow-hidden">
+    <section id="about" className="py-24 bg-white relative overflow-hidden">
       <div className="absolute inset-0 opacity-3">
         <svg className="w-full h-full" viewBox="0 0 800 400">
           <circle cx="100" cy="200" r="150" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" />
           <circle cx="700" cy="200" r="150" fill="none" stroke="rgb(5, 102, 55)" strokeWidth="0.5" />
+          <circle cx="400" cy="100" r="80" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.6" />
+          <circle cx="300" cy="300" r="100" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.4" />
+          <circle cx="500" cy="300" r="90" fill="none" stroke="rgb(5, 102, 55)" strokeWidth="0.5" opacity="0.4" />
+          <path d="M 50 100 Q 200 150, 350 100 T 650 100" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.3" />
+          <path d="M 150 350 Q 400 300, 650 350" fill="none" stroke="rgb(5, 102, 55)" strokeWidth="0.5" opacity="0.3" />
         </svg>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16">
           <div className="inline-block mb-4">
-            <div className="w-16 h-16 mx-auto rounded-full border-2 border-amber-600 flex items-center justify-center">
-              <Heart className="text-amber-600" size={32} />
+            <div className="w-16 h-16 mx-auto rounded-full border-2 border-gold-600 flex items-center justify-center">
+              <Heart className="text-gold-600" size={32} />
             </div>
           </div>
           <h2 className="text-4xl sm:text-5xl text-gray-900 mb-4 font-semibold">
-            About <span className="text-amber-600">Maira</span>
+            About <span className="text-gold-600">Maira</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-pink-300 via-amber-500 to-emerald-600 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-pink-300 via-gold-500 to-emerald-600 mx-auto rounded-full"></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -33,7 +38,7 @@ export default function About() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-pink-200 to-amber-200 rounded-full -z-10"></div>
+              <div className="absolute -bottom-6 -right-6 w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-pink-200 to-gold-200 rounded-full -z-10"></div>
               <div className="absolute -top-6 -left-6 w-16 h-16 md:w-24 md:h-24 bg-gradient-to-br from-emerald-200 to-pink-200 rounded-full -z-10"></div>
             </div>
           </div>
@@ -58,8 +63,8 @@ export default function About() {
             </p>
 
             <div className="grid grid-cols-2 gap-6 pt-8">
-              <div className="text-center p-6 bg-white/80 rounded-xl border-2 border-amber-200 shadow-md">
-                <Palette className="text-amber-600 mx-auto mb-3" size={32} />
+              <div className="text-center p-6 bg-white/80 rounded-xl border-2 border-gold-200 shadow-md">
+                <Palette className="text-gold-600 mx-auto mb-3" size={32} />
                 <h3 className="text-xl text-gray-900 mb-2 font-semibold">Spirit Painter</h3>
                 <p className="text-sm text-gray-700">Channeling energy into art</p>
               </div>

@@ -23,7 +23,7 @@ const services = [
       'Personal symbolism and colors',
       'Perfect for meditation spaces',
     ],
-    color: 'amber',
+    color: 'gold',
   },
   {
     icon: Eye,
@@ -41,29 +41,36 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 bg-pink-100 relative overflow-hidden">
+    <section id="services" className="py-24 bg-white relative overflow-hidden">
       <div className="absolute inset-0 opacity-3">
         <svg className="w-full h-full" viewBox="0 0 800 800">
           <circle cx="400" cy="400" r="350" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" strokeDasharray="10,10" />
+          <circle cx="150" cy="150" r="120" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.5" />
+          <circle cx="650" cy="200" r="100" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.5" />
+          <circle cx="200" cy="650" r="140" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.5" />
+          <circle cx="700" cy="700" r="110" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.5" />
+          <circle cx="400" cy="100" r="80" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.4" />
+          <path d="M 100 400 Q 250 300, 400 400 T 700 400" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.3" strokeDasharray="5,5" />
+          <path d="M 150 600 Q 400 500, 650 600" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.3" />
         </svg>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl text-gray-900 mb-4 font-semibold">
-            My <span className="text-amber-600">Services</span>
+            My <span className="text-gold-600">Services</span>
           </h2>
           <p className="text-xl text-gray-800 max-w-2xl mx-auto">
             Each service is a sacred journey designed to illuminate your path and connect you with your highest self
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-pink-300 via-amber-500 to-emerald-600 mx-auto rounded-full mt-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-pink-300 via-gold-500 to-emerald-600 mx-auto rounded-full mt-6"></div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon;
-            const iconColor = service.color === 'pink' ? 'text-pink-600' : service.color === 'amber' ? 'text-amber-600' : 'text-emerald-700';
-            const borderColor = service.color === 'pink' ? 'border-pink-300' : service.color === 'amber' ? 'border-amber-300' : 'border-emerald-300';
+            const iconColor = service.color === 'pink' ? 'text-pink-600' : service.color === 'gold' ? 'text-gold-600' : 'text-emerald-700';
+            const borderColor = service.color === 'pink' ? 'border-pink-300' : service.color === 'gold' ? 'border-gold-300' : 'border-emerald-300';
 
             return (
               <div
@@ -91,7 +98,7 @@ export default function Services() {
 
                 <a
                   href="#contact"
-                  className="block text-center bg-amber-50 text-gray-900 px-6 py-3 rounded-full hover:bg-amber-100 transition-colors duration-200 font-medium shadow-md border-2 border-amber-300"
+                  className="block text-center bg-gold-50 text-gray-900 px-6 py-3 rounded-full hover:bg-gold-100 transition-colors duration-200 font-medium shadow-md border-2 border-gold-300"
                 >
                   Learn More
                 </a>
@@ -100,7 +107,7 @@ export default function Services() {
           })}
         </div>
 
-        <div className="mt-16 bg-white rounded-2xl p-8 text-center shadow-lg border-2 border-amber-300">
+        <div className="mt-16 bg-white rounded-2xl p-8 text-center shadow-lg border-2 border-gold-300">
           <h3 className="text-2xl text-gray-900 mb-4 font-semibold">Not sure which service is right for you?</h3>
           <p className="text-gray-800 mb-6 max-w-2xl mx-auto">
             I'm happy to discuss your needs and help you choose the perfect session.
@@ -108,7 +115,7 @@ export default function Services() {
           </p>
           <a
             href="#contact"
-            className="inline-block bg-amber-600 text-white px-8 py-3 rounded-full hover:bg-amber-700 transition-colors duration-200 font-medium shadow-lg"
+            className="inline-block bg-gold-600 text-white px-8 py-3 rounded-full hover:bg-gold-700 transition-colors duration-200 font-medium shadow-lg"
           >
             Get in Touch
           </a>

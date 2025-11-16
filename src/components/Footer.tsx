@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <div className="mb-4">
-              <div className="text-lg text-amber-700 font-semibold">Whispered Musings</div>
+              <div className="text-lg text-gold-700 font-semibold">Whispered Musings</div>
               <div className="text-xs text-gray-600">Maira Kearns</div>
             </div>
             <p className="text-gray-700 text-sm leading-relaxed">
@@ -24,12 +24,12 @@ export default function Footer() {
           <div>
             <h3 className="text-lg mb-4 text-gray-900 font-semibold">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#home" className="text-gray-700 hover:text-amber-600 transition-colors">Home</a></li>
-              <li><a href="#about" className="text-gray-700 hover:text-amber-600 transition-colors">About Maira</a></li>
-              <li><a href="#services" className="text-gray-700 hover:text-amber-600 transition-colors">Services</a></li>
-              <li><a href="#gallery" className="text-gray-700 hover:text-amber-600 transition-colors">Gallery</a></li>
-              <li><a href="#testimonials" className="text-gray-700 hover:text-amber-600 transition-colors">Testimonials</a></li>
-              <li><a href="#contact" className="text-gray-700 hover:text-amber-600 transition-colors">Contact</a></li>
+              <li><a href="#home" className="text-gray-700 hover:text-gold-600 transition-colors">Home</a></li>
+              <li><a href="#about" className="text-gray-700 hover:text-gold-600 transition-colors">About Maira</a></li>
+              <li><a href="#services" className="text-gray-700 hover:text-gold-600 transition-colors">Services</a></li>
+              <li><a href="#gallery" className="text-gray-700 hover:text-gold-600 transition-colors">Gallery</a></li>
+              <li><a href="#testimonials" className="text-gray-700 hover:text-gold-600 transition-colors">Testimonials</a></li>
+              <li><a href="#contact" className="text-gray-700 hover:text-gold-600 transition-colors">Contact</a></li>
             </ul>
           </div>
 
@@ -49,7 +49,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Whispered Musings. All rights reserved.
           </p>
           <div className="flex items-center text-gray-700 text-sm">
-            Made with <Heart className="mx-1 text-amber-600" size={16} fill="currentColor" /> for seekers of light
+            Made with <Heart className="mx-1 text-gold-600" size={16} fill="currentColor" /> for seekers of light
           </div>
         </div>
       </div>

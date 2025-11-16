@@ -14,7 +14,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 w-full bg-pink-200/95 backdrop-blur-sm shadow-sm z-50">
+    <header className="fixed top-0 w-full bg-pink-100/95 backdrop-blur-sm shadow-sm z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
 
@@ -23,7 +23,7 @@ export default function Header() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-gray-900 hover:text-amber-600 transition-colors duration-200 font-semibold"
+                className="text-gray-900 hover:text-gold-600 transition-colors duration-200 font-semibold"
               >
                 {link.name}
               </a>
@@ -33,7 +33,7 @@ export default function Header() {
           <div className="hidden md:block">
             <a
               href="#contact"
-              className="bg-amber-600 text-white px-6 py-2.5 rounded-full hover:bg-amber-700 transition-colors duration-200 font-medium"
+              className="bg-gold-600 text-white px-6 py-2.5 rounded-full hover:bg-gold-700 transition-colors duration-200 font-medium"
             >
               Book a Reading
             </a>
@@ -41,7 +41,7 @@ export default function Header() {
 
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-md text-gray-900 hover:text-amber-600 hover:bg-pink-100"
+            className="md:hidden p-2 rounded-md text-gray-900 hover:text-gold-600 hover:bg-pink-100"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -55,7 +55,7 @@ export default function Header() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="text-gray-900 hover:text-amber-600 transition-colors duration-200 font-semibold py-2"
+                  className="text-gray-900 hover:text-gold-600 transition-colors duration-200 font-semibold py-2"
                 >
                   {link.name}
                 </a>
@@ -63,7 +63,7 @@ export default function Header() {
               <a
                 href="#contact"
                 onClick={() => setIsMenuOpen(false)}
-                className="bg-amber-600 text-white px-6 py-2.5 rounded-full hover:bg-amber-700 transition-colors duration-200 font-medium text-center"
+                className="bg-gold-600 text-white px-6 py-2.5 rounded-full hover:bg-gold-700 transition-colors duration-200 font-medium text-center"
               >
                 Book a Reading
               </a>
