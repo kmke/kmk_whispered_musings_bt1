@@ -84,7 +84,7 @@ export default function Contact() {
           <div>
             <h3 className="text-xl sm:text-2xl text-gray-900 mb-4 sm:mb-6 font-semibold">Let's Connect</h3>
             <p className="text-sm sm:text-base text-gray-800 mb-6 sm:mb-8 leading-relaxed">
-              Whether you're seeking clarity through tarot, wanting to commission a spirit painting,
+              Whether you're seeking clarity through tarot, wanting to commission spirit art,
               or curious about intuitive guidance, I'm here to help. Fill out the form and I'll
               respond within 24-48 hours.
             </p>
@@ -104,7 +104,7 @@ export default function Contact() {
                   >
                     @whisperedmusings888
                   </a>
-                  <p className="text-gray-700 mt-2 text-sm">Connect with me on Instagram for daily insights, tarot readings, spirit paintings, and spiritual guidance. DM me for inquiries about readings or commissions!</p>
+                  <p className="text-gray-700 mt-2 text-sm">Connect with me on Instagram for daily insights, tarot readings, spirit art, and spiritual guidance. DM me for inquiries about readings or commissions!</p>
                 </div>
               </div>
             </div>
@@ -165,7 +165,7 @@ export default function Contact() {
                 >
                   <option value="">Select a service</option>
                   <option value="tarot">Tarot Reading</option>
-                  <option value="painting">Spirit Painting</option>
+                  <option value="painting">Spirit Art</option>
                   <option value="intuitive">Intuitive Reading</option>
                   <option value="unsure">Not sure yet</option>
                 </select>

@@ -15,7 +15,7 @@ const services = [
   },
   {
     icon: Palette,
-    title: 'Spirit Paintings',
+    title: 'Spirit Art',
     description: 'A unique channeled artwork created specifically for you. I connect with your energy and spirit guides to create a visual representation of your soul\'s essence.',
     features: [
       'Custom commissioned artwork',

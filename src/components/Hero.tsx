@@ -35,7 +35,7 @@ export default function Hero() {
             </p>
 
             <p className="text-base sm:text-lg lg:text-xl text-gray-900 mb-6 sm:mb-8 leading-relaxed px-2 sm:px-0">
-              Intuitive tarot reader, spirit painter, and guide to the whispers of your soul.
+              Intuitive tarot reader, spirit artist, and guide to the whispers of your soul.
               Let me illuminate your path with the wisdom of the cards and the art of intuition.
             </p>
 
@@ -50,7 +50,7 @@ export default function Hero() {
                 href="#gallery"
                 className="border-2 border-gold-600 text-gold-700 px-6 py-3 sm:px-8 sm:py-4 rounded-full hover:bg-gold-600 hover:text-white transition-all duration-200 font-medium text-base sm:text-lg shadow-md w-full sm:w-auto text-center"
               >
-                View Spirit Paintings
+                View Spirit Art
               </a>
             </div>
 
@@ -62,7 +62,7 @@ export default function Hero() {
               <div className="w-px bg-gray-500"></div>
               <div>
                 <div className="text-2xl sm:text-3xl text-gold-700 mb-1 sm:mb-2 font-semibold">Spirit</div>
-                <p className="text-xs sm:text-sm text-gray-900 font-medium">Paintings</p>
+                <p className="text-xs sm:text-sm text-gray-900 font-medium">Art</p>
               </div>
               <div className="w-px bg-gray-500"></div>
               <div>

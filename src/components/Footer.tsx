@@ -17,7 +17,7 @@ export default function Footer() {
               <div className="text-xs text-gray-600">Maira Kearns</div>
             </div>
             <p className="text-gray-700 text-sm leading-relaxed">
-              Illuminating your path through tarot, spirit paintings, and intuitive guidance.
+              Illuminating your path through tarot, spirit art, and intuitive guidance.
             </p>
           </div>
 
@@ -37,7 +37,7 @@ export default function Footer() {
             <h3 className="text-lg mb-4 text-gray-900 font-semibold">Services</h3>
             <ul className="space-y-2 text-sm">
               <li className="text-gray-700">Tarot Readings</li>
-              <li className="text-gray-700">Spirit Paintings</li>
+              <li className="text-gray-700">Spirit Art</li>
               <li className="text-gray-700">Intuitive Guidance</li>
               <li className="text-gray-700">Custom Commissions</li>
             </ul>

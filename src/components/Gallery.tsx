@@ -60,10 +60,10 @@ export default function Gallery() {
       <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-10 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl text-gray-900 mb-3 sm:mb-4 font-semibold px-2 sm:px-0">
-            Spirit <span className="text-gold-600">Paintings</span>
+            Spirit <span className="text-gold-600">Art</span>
           </h2>
           <p className="text-lg sm:text-xl text-gray-800 max-w-2xl mx-auto px-2 sm:px-0">
-            Each painting is a unique channeling of spiritual energy, created with intention and divine guidance
+            Each piece is a unique channeling of spiritual energy, created with intention and divine guidance
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-300 via-gold-500 to-emerald-600 mx-auto rounded-full mt-6"></div>
         </div>
@@ -96,9 +96,9 @@ export default function Gallery() {
 
         <div className="mt-16 text-center">
           <div className="bg-white rounded-2xl p-6 sm:p-8 inline-block shadow-lg border-2 border-gold-300 mx-2 sm:mx-0">
-            <h3 className="text-xl sm:text-2xl text-gray-900 mb-3 sm:mb-4 font-semibold px-2 sm:px-0">Commission Your Spirit Painting</h3>
+            <h3 className="text-xl sm:text-2xl text-gray-900 mb-3 sm:mb-4 font-semibold px-2 sm:px-0">Commission Your Spirit Art</h3>
             <p className="text-sm sm:text-base text-gray-800 mb-4 sm:mb-6 max-w-xl px-2 sm:px-0">
-              Let me create a personalized spirit painting that captures your unique energy and spiritual essence
+              Let me create a personalized spirit art piece that captures your unique energy and spiritual essence
             </p>
             <a
               href="#contact"

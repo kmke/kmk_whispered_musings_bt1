@@ -45,27 +45,19 @@ export default function About() {
 
           <div className="space-y-4 sm:space-y-6 px-2 sm:px-0">
             <p className="text-base sm:text-lg text-gray-800 leading-relaxed">
-              Welcome, dear soul. I'm Maira Kearns, and I believe that every person carries
-              a unique story written in the stars, whispered by the universe, and waiting
-              to be unveiled.
+              I am a tarot reader; an Intuitive reader and Spirit Art medium and I began my journey many years ago when I was a child. I had encounters with Spirit which at the time I did not understand. I just knew I was seeing and sensing Spirit and at times it scared me, I would push the things that I was seeing and sensing away and shutdown my abilities because of my fear.
             </p>
             <p className="text-base sm:text-lg text-gray-800 leading-relaxed">
-              My journey into the mystical arts began years ago when I discovered the
-              profound connection between intuition, art, and the divine messages that
-              surround us. Through tarot, I've learned to read the language of the soul.
-              Through painting, I've discovered how to channel spiritual energy into
-              visual form.
+              But as time went on, I was always called backed to it. I would open up and shut it down time and time again until finally I began to listen, see and sense more attentively. I had help from family and others along the way and by being open I have come to learn about my gifts and now seek to help others by providing messages from Spirit. Know that there is no need to ever feel alone because we are never alone. We just have to reach out.
             </p>
             <p className="text-base sm:text-lg text-gray-800 leading-relaxed">
-              Each reading I offer is more than a glimpse into your future—it's a
-              conversation with your higher self. Each painting I create is more than
-              art—it's a manifestation of spiritual energy and personal truth.
+              If you are seeking answers, then reach out and get connected so that you too can see that you are not alone.
             </p>
 
             <div className="grid grid-cols-2 gap-4 sm:gap-6 pt-6 sm:pt-8">
               <div className="text-center p-4 sm:p-6 bg-white/80 rounded-xl border-2 border-gold-200 shadow-md">
                 <Palette className="text-gold-600 mx-auto mb-2 sm:mb-3" size={24} />
-                <h3 className="text-lg sm:text-xl text-gray-900 mb-1 sm:mb-2 font-semibold">Spirit Painter</h3>
+                <h3 className="text-lg sm:text-xl text-gray-900 mb-1 sm:mb-2 font-semibold">Spirit Artist</h3>
                 <p className="text-xs sm:text-sm text-gray-700">Channeling energy into art</p>
               </div>
               <div className="text-center p-4 sm:p-6 bg-white/80 rounded-xl border-2 border-emerald-200 shadow-md">
