@@ -45,7 +45,7 @@ export default function About() {
 
           <div className="space-y-4 sm:space-y-6 px-2 sm:px-0">
             <p className="text-base sm:text-lg text-gray-800 leading-relaxed">
-              I am a tarot reader; an Intuitive reader and Spirit Art medium and I began my journey many years ago when I was a child. I had encounters with Spirit which at the time I did not understand. I just knew I was seeing and sensing Spirit and at times it scared me, I would push the things that I was seeing and sensing away and shutdown my abilities because of my fear.
+              I am a tarot reader; an Intuitive reader and Spirit Art medium and I began my journey many years ago when I was a child. I had encounters with Spirit which at the time I did not understand. I just knew I was seeing and sensing Spirit and at times it scared me. I would push the things that I was seeing and sensing away and shutdown my abilities because of my fear.
             </p>
             <p className="text-base sm:text-lg text-gray-800 leading-relaxed">
               But as time went on, I was always called backed to it. I would open up and shut it down time and time again until finally I began to listen, see and sense more attentively. I had help from family and others along the way and by being open I have come to learn about my gifts and now seek to help others by providing messages from Spirit. Know that there is no need to ever feel alone because we are never alone. We just have to reach out.
