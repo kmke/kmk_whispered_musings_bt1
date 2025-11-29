@@ -9,7 +9,7 @@ export default function Header() {
     { name: 'About', href: '#about' },
     { name: 'Services', href: '#services' },
     { name: 'Gallery', href: '#gallery' },
-    { name: 'Testimonials', href: '#testimonials' },
+    // { name: 'Testimonials', href: '#testimonials' }, // Hidden for now - will add back later
     { name: 'Contact', href: '#contact' },
   ];
 

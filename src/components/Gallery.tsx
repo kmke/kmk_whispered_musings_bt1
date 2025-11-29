@@ -4,39 +4,21 @@ import { X } from 'lucide-react';
 const paintings = [
   {
     id: 1,
-    title: 'Solar Awakening',
-    image: 'https://images.pexels.com/photos/1037993/pexels-photo-1037993.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'A channeled piece representing transformation and inner light',
+    title: 'The Lily',
+    image: '/spa1.jpeg',
+    description: 'Message from loved one as given to Maira Kearns',
   },
   {
     id: 2,
-    title: 'Lunar Whispers',
-    image: 'https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Intuitive guidance expressed through flowing energy',
+    title: 'Violet Flame',
+    image: '/spa2.jpg',
+    description: 'Violet Flame message from Archangel Raphael Channeled by Maira Kearns',
   },
   {
     id: 3,
-    title: 'Spirit Guardian',
-    image: 'https://images.pexels.com/photos/1209843/pexels-photo-1209843.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'A protective presence manifested in color and form',
-  },
-  {
-    id: 4,
-    title: 'Ethereal Dance',
-    image: 'https://images.pexels.com/photos/1269968/pexels-photo-1269968.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'The soul\'s journey captured in movement',
-  },
-  {
-    id: 5,
-    title: 'Divine Feminine',
-    image: 'https://images.pexels.com/photos/1762851/pexels-photo-1762851.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Channeling the sacred feminine energy',
-  },
-  {
-    id: 6,
-    title: 'Cosmic Connection',
-    image: 'https://images.pexels.com/photos/1269633/pexels-photo-1269633.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Universal energy flowing through consciousness',
+    title: 'Archangel Gabriel',
+    image: '/spa3.jpeg',
+    description: 'Message from Archangel Gabriel Channeled by Maira Kearns',
   },
 ];
 
