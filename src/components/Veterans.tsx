@@ -1,31 +1,91 @@
-import { Heart, Shield } from 'lucide-react';
+import { Heart } from 'lucide-react';
+
+// American Flag Icon Component
+const FlagIcon = ({ size = 32 }: { size?: number }) => (
+  <svg width={size} height={size * 0.6} viewBox="0 0 50 30" className="inline-block">
+    {/* Red and white stripes */}
+    <rect width="50" height="2.31" fill="#B22234" y="0" />
+    <rect width="50" height="2.31" fill="#FFFFFF" y="2.31" />
+    <rect width="50" height="2.31" fill="#B22234" y="4.62" />
+    <rect width="50" height="2.31" fill="#FFFFFF" y="6.93" />
+    <rect width="50" height="2.31" fill="#B22234" y="9.24" />
+    <rect width="50" height="2.31" fill="#FFFFFF" y="11.55" />
+    <rect width="50" height="2.31" fill="#B22234" y="13.86" />
+    <rect width="50" height="2.31" fill="#FFFFFF" y="16.17" />
+    <rect width="50" height="2.31" fill="#B22234" y="18.48" />
+    <rect width="50" height="2.31" fill="#FFFFFF" y="20.79" />
+    <rect width="50" height="2.31" fill="#B22234" y="23.1" />
+    <rect width="50" height="2.31" fill="#FFFFFF" y="25.41" />
+    <rect width="50" height="2.31" fill="#B22234" y="27.69" />
+    
+    {/* Blue field */}
+    <rect width="20" height="13.85" fill="#3C3B6E" x="0" y="0" />
+    
+    {/* Stars (simplified as small circles) */}
+    <circle cx="2.5" cy="2.5" r="0.6" fill="#FFFFFF" />
+    <circle cx="5" cy="2.5" r="0.6" fill="#FFFFFF" />
+    <circle cx="7.5" cy="2.5" r="0.6" fill="#FFFFFF" />
+    <circle cx="10" cy="2.5" r="0.6" fill="#FFFFFF" />
+    <circle cx="12.5" cy="2.5" r="0.6" fill="#FFFFFF" />
+    <circle cx="15" cy="2.5" r="0.6" fill="#FFFFFF" />
+    <circle cx="17.5" cy="2.5" r="0.6" fill="#FFFFFF" />
+    <circle cx="2.5" cy="5" r="0.6" fill="#FFFFFF" />
+    <circle cx="5" cy="5" r="0.6" fill="#FFFFFF" />
+    <circle cx="7.5" cy="5" r="0.6" fill="#FFFFFF" />
+    <circle cx="10" cy="5" r="0.6" fill="#FFFFFF" />
+    <circle cx="12.5" cy="5" r="0.6" fill="#FFFFFF" />
+    <circle cx="15" cy="5" r="0.6" fill="#FFFFFF" />
+    <circle cx="17.5" cy="5" r="0.6" fill="#FFFFFF" />
+    <circle cx="2.5" cy="7.5" r="0.6" fill="#FFFFFF" />
+    <circle cx="5" cy="7.5" r="0.6" fill="#FFFFFF" />
+    <circle cx="7.5" cy="7.5" r="0.6" fill="#FFFFFF" />
+    <circle cx="10" cy="7.5" r="0.6" fill="#FFFFFF" />
+    <circle cx="12.5" cy="7.5" r="0.6" fill="#FFFFFF" />
+    <circle cx="15" cy="7.5" r="0.6" fill="#FFFFFF" />
+    <circle cx="17.5" cy="7.5" r="0.6" fill="#FFFFFF" />
+    <circle cx="2.5" cy="10" r="0.6" fill="#FFFFFF" />
+    <circle cx="5" cy="10" r="0.6" fill="#FFFFFF" />
+    <circle cx="7.5" cy="10" r="0.6" fill="#FFFFFF" />
+    <circle cx="10" cy="10" r="0.6" fill="#FFFFFF" />
+    <circle cx="12.5" cy="10" r="0.6" fill="#FFFFFF" />
+    <circle cx="15" cy="10" r="0.6" fill="#FFFFFF" />
+    <circle cx="17.5" cy="10" r="0.6" fill="#FFFFFF" />
+    <circle cx="2.5" cy="12.5" r="0.6" fill="#FFFFFF" />
+    <circle cx="5" cy="12.5" r="0.6" fill="#FFFFFF" />
+    <circle cx="7.5" cy="12.5" r="0.6" fill="#FFFFFF" />
+    <circle cx="10" cy="12.5" r="0.6" fill="#FFFFFF" />
+    <circle cx="12.5" cy="12.5" r="0.6" fill="#FFFFFF" />
+    <circle cx="15" cy="12.5" r="0.6" fill="#FFFFFF" />
+    <circle cx="17.5" cy="12.5" r="0.6" fill="#FFFFFF" />
+  </svg>
+);
 
 export default function Veterans() {
   return (
     <section id="veterans" className="py-24 bg-white relative overflow-hidden">
       <div className="absolute inset-0 opacity-3">
         <svg className="w-full h-full" viewBox="0 0 800 800">
-          <circle cx="400" cy="400" r="350" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" strokeDasharray="10,10" />
-          <circle cx="150" cy="150" r="120" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.5" />
-          <circle cx="650" cy="200" r="100" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.5" />
-          <circle cx="200" cy="650" r="140" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.5" />
-          <circle cx="700" cy="700" r="110" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.5" />
-          <path d="M 100 400 Q 250 300, 400 400 T 700 400" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.3" strokeDasharray="5,5" />
-          <path d="M 150 600 Q 400 500, 650 600" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.3" />
+          <circle cx="400" cy="400" r="350" fill="none" stroke="#B22234" strokeWidth="0.5" strokeDasharray="10,10" />
+          <circle cx="150" cy="150" r="120" fill="none" stroke="#3C3B6E" strokeWidth="0.5" opacity="0.5" />
+          <circle cx="650" cy="200" r="100" fill="none" stroke="#B22234" strokeWidth="0.5" opacity="0.5" />
+          <circle cx="200" cy="650" r="140" fill="none" stroke="#3C3B6E" strokeWidth="0.5" opacity="0.5" />
+          <circle cx="700" cy="700" r="110" fill="none" stroke="#B22234" strokeWidth="0.5" opacity="0.5" />
+          <path d="M 100 400 Q 250 300, 400 400 T 700 400" fill="none" stroke="#3C3B6E" strokeWidth="0.5" opacity="0.3" strokeDasharray="5,5" />
+          <path d="M 150 600 Q 400 500, 650 600" fill="none" stroke="#B22234" strokeWidth="0.5" opacity="0.3" />
         </svg>
       </div>
 
       <div className="max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-10 sm:mb-16">
           <div className="inline-block mb-4">
-            <div className="w-16 h-16 mx-auto rounded-full border-2 border-gold-600 flex items-center justify-center">
-              <Shield className="text-gold-600" size={32} />
+            <div className="w-20 h-20 mx-auto rounded-full border-4 border-red-600 bg-blue-50 flex items-center justify-center shadow-lg">
+              <FlagIcon size={40} />
             </div>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl text-gray-900 mb-3 sm:mb-4 font-semibold px-2 sm:px-0">
-            Honoring My Father and Our <span className="text-gold-600">Veterans</span>
+            Honoring My Father and Our <span className="text-red-600">Veterans</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-pink-300 via-gold-500 to-emerald-600 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-red-500 via-blue-600 to-red-500 mx-auto rounded-full"></div>
         </div>
 
         <div className="space-y-6 sm:space-y-8 text-gray-800 leading-relaxed">
@@ -46,23 +106,23 @@ export default function Veterans() {
           </p>
         </div>
 
-        <div className="mt-12 sm:mt-16 bg-white rounded-2xl p-6 sm:p-8 shadow-lg border-2 border-gold-300">
+        <div className="mt-12 sm:mt-16 bg-gradient-to-br from-red-50 via-white to-blue-50 rounded-2xl p-6 sm:p-8 shadow-lg border-2 border-red-300">
           <div className="text-center mb-6">
             <div className="inline-block mb-4">
-              <Heart className="text-gold-600 mx-auto" size={32} />
+              <Heart className="text-red-600 mx-auto" size={32} fill="currentColor" />
             </div>
             <h3 className="text-xl sm:text-2xl text-gray-900 mb-3 sm:mb-4 font-semibold">
               Supporting Our Veterans
             </h3>
             <p className="text-base sm:text-lg text-gray-800 mb-4 sm:mb-6">
-              20-minute readings for <span className="text-gold-600 font-semibold">$20</span>
+              20-minute readings for <span className="text-red-600 font-semibold">$20</span>
             </p>
             <p className="text-sm sm:text-base text-gray-700 mb-6">
               All proceeds will be donated to the Wounded Warrior Project
             </p>
             <a
               href="#contact"
-              className="inline-block bg-gold-600 text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full hover:bg-gold-700 transition-colors duration-200 font-medium text-sm sm:text-base shadow-lg"
+              className="inline-block bg-gradient-to-r from-red-600 to-blue-600 text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full hover:from-red-700 hover:to-blue-700 transition-all duration-200 font-medium text-sm sm:text-base shadow-lg transform hover:scale-105"
             >
               Book a Reading
             </a>
@@ -77,7 +137,7 @@ export default function Veterans() {
             href="https://www.woundedwarriorproject.org"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gold-600 hover:text-gold-700 font-semibold text-base sm:text-lg underline"
+            className="text-blue-600 hover:text-red-600 font-semibold text-base sm:text-lg underline transition-colors"
           >
             woundedwarriorproject.org
           </a>
