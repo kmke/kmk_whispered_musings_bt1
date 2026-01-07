@@ -18,12 +18,14 @@ export default function Veterans() {
       <div className="max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-10 sm:mb-16">
           <div className="inline-block mb-4">
-            <div className="w-20 h-20 mx-auto rounded-full border-4 border-red-600 bg-blue-50 overflow-hidden shadow-lg">
-              <img
-                src="/american-flag.png"
-                alt="American Flag"
-                className="w-full h-full object-cover object-center"
-              />
+            <div className="w-20 h-20 mx-auto rounded-full p-1 bg-gradient-to-r from-red-600 via-white to-blue-600 shadow-lg">
+              <div className="w-full h-full rounded-full overflow-hidden">
+                <img
+                  src="/flag.jpeg"
+                  alt="American Flag"
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
             </div>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl text-gray-900 mb-3 sm:mb-4 font-semibold px-2 sm:px-0">
