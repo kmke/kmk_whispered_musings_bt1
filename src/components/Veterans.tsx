@@ -1,65 +1,5 @@
 import { Heart } from 'lucide-react';
 
-// American Flag Icon Component
-const FlagIcon = ({ size = 32 }: { size?: number }) => (
-  <svg width={size} height={size * 0.6} viewBox="0 0 50 30" className="inline-block">
-    {/* Red and white stripes */}
-    <rect width="50" height="2.31" fill="#B22234" y="0" />
-    <rect width="50" height="2.31" fill="#FFFFFF" y="2.31" />
-    <rect width="50" height="2.31" fill="#B22234" y="4.62" />
-    <rect width="50" height="2.31" fill="#FFFFFF" y="6.93" />
-    <rect width="50" height="2.31" fill="#B22234" y="9.24" />
-    <rect width="50" height="2.31" fill="#FFFFFF" y="11.55" />
-    <rect width="50" height="2.31" fill="#B22234" y="13.86" />
-    <rect width="50" height="2.31" fill="#FFFFFF" y="16.17" />
-    <rect width="50" height="2.31" fill="#B22234" y="18.48" />
-    <rect width="50" height="2.31" fill="#FFFFFF" y="20.79" />
-    <rect width="50" height="2.31" fill="#B22234" y="23.1" />
-    <rect width="50" height="2.31" fill="#FFFFFF" y="25.41" />
-    <rect width="50" height="2.31" fill="#B22234" y="27.69" />
-    
-    {/* Blue field */}
-    <rect width="20" height="13.85" fill="#3C3B6E" x="0" y="0" />
-    
-    {/* Stars (simplified as small circles) */}
-    <circle cx="2.5" cy="2.5" r="0.6" fill="#FFFFFF" />
-    <circle cx="5" cy="2.5" r="0.6" fill="#FFFFFF" />
-    <circle cx="7.5" cy="2.5" r="0.6" fill="#FFFFFF" />
-    <circle cx="10" cy="2.5" r="0.6" fill="#FFFFFF" />
-    <circle cx="12.5" cy="2.5" r="0.6" fill="#FFFFFF" />
-    <circle cx="15" cy="2.5" r="0.6" fill="#FFFFFF" />
-    <circle cx="17.5" cy="2.5" r="0.6" fill="#FFFFFF" />
-    <circle cx="2.5" cy="5" r="0.6" fill="#FFFFFF" />
-    <circle cx="5" cy="5" r="0.6" fill="#FFFFFF" />
-    <circle cx="7.5" cy="5" r="0.6" fill="#FFFFFF" />
-    <circle cx="10" cy="5" r="0.6" fill="#FFFFFF" />
-    <circle cx="12.5" cy="5" r="0.6" fill="#FFFFFF" />
-    <circle cx="15" cy="5" r="0.6" fill="#FFFFFF" />
-    <circle cx="17.5" cy="5" r="0.6" fill="#FFFFFF" />
-    <circle cx="2.5" cy="7.5" r="0.6" fill="#FFFFFF" />
-    <circle cx="5" cy="7.5" r="0.6" fill="#FFFFFF" />
-    <circle cx="7.5" cy="7.5" r="0.6" fill="#FFFFFF" />
-    <circle cx="10" cy="7.5" r="0.6" fill="#FFFFFF" />
-    <circle cx="12.5" cy="7.5" r="0.6" fill="#FFFFFF" />
-    <circle cx="15" cy="7.5" r="0.6" fill="#FFFFFF" />
-    <circle cx="17.5" cy="7.5" r="0.6" fill="#FFFFFF" />
-    <circle cx="2.5" cy="10" r="0.6" fill="#FFFFFF" />
-    <circle cx="5" cy="10" r="0.6" fill="#FFFFFF" />
-    <circle cx="7.5" cy="10" r="0.6" fill="#FFFFFF" />
-    <circle cx="10" cy="10" r="0.6" fill="#FFFFFF" />
-    <circle cx="12.5" cy="10" r="0.6" fill="#FFFFFF" />
-    <circle cx="15" cy="10" r="0.6" fill="#FFFFFF" />
-    <circle cx="17.5" cy="10" r="0.6" fill="#FFFFFF" />
-    <circle cx="2.5" cy="12.5" r="0.6" fill="#FFFFFF" />
-    <circle cx="5" cy="12.5" r="0.6" fill="#FFFFFF" />
-    <circle cx="7.5" cy="12.5" r="0.6" fill="#FFFFFF" />
-    <circle cx="10" cy="12.5" r="0.6" fill="#FFFFFF" />
-    <circle cx="12.5" cy="12.5" r="0.6" fill="#FFFFFF" />
-    <circle cx="15" cy="12.5" r="0.6" fill="#FFFFFF" />
-    <circle cx="17.5" cy="12.5" r="0.6" fill="#FFFFFF" />
-  </svg>
-);
-
 export default function Veterans() {
   return (
     <section id="veterans" className="py-24 bg-white relative overflow-hidden">
@@ -78,8 +18,12 @@ export default function Veterans() {
       <div className="max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-10 sm:mb-16">
           <div className="inline-block mb-4">
-            <div className="w-20 h-20 mx-auto rounded-full border-4 border-red-600 bg-blue-50 flex items-center justify-center shadow-lg">
-              <FlagIcon size={40} />
+            <div className="w-20 h-20 mx-auto rounded-full border-4 border-red-600 bg-blue-50 overflow-hidden shadow-lg">
+              <img
+                src="/american-flag.png"
+                alt="American Flag"
+                className="w-full h-full object-cover object-center"
+              />
             </div>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl text-gray-900 mb-3 sm:mb-4 font-semibold px-2 sm:px-0">
