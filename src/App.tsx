@@ -4,6 +4,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Gallery from './components/Gallery';
 // import Testimonials from './components/Testimonials'; // Hidden for now - will add back later
+import Veterans from './components/Veterans';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -16,6 +17,7 @@ function App() {
       <Services />
       <Gallery />
       {/* <Testimonials /> */}
+      <Veterans />
       <Contact />
       <Footer />
     </div>
