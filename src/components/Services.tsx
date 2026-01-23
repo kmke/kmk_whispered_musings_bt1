@@ -16,7 +16,7 @@ const services = [
   {
     icon: Palette,
     title: 'Spirit Art',
-    description: 'A unique channeled artwork created specifically for you. I connect with your energy and spirit guides to create a visual representation of your soul\'s essence.',
+    description: 'A unique channeled artwork created specifically for you. I connect with angelic energies and loved ones to deliver personal messages.',
     features: [
       'Custom commissioned artwork',
       'Channeled spiritual energy',
