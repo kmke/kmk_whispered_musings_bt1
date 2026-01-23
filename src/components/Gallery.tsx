@@ -41,6 +41,9 @@ export default function Gallery() {
 
       <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-10 sm:mb-16">
+          <div className="flex justify-center mb-4">
+            <img src="/enzo.png" alt="Enzo" className="w-12 h-12 rounded-full object-cover" />
+          </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl text-gray-900 mb-3 sm:mb-4 font-semibold px-2 sm:px-0">
             Spirit <span className="text-gold-600">Art</span>
           </h2>
