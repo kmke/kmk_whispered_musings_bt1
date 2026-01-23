@@ -6,8 +6,7 @@ const services = [
     title: 'Tarot Readings',
     description: 'Unlock the wisdom of the cards and discover clarity on your life\'s journey. Each reading is a sacred conversation between you, the cards, and divine guidance.',
     features: [
-      '30-minute session: $45',
-      '60-minute session: $90',
+      '30-minute session: $49',
       'Past, present, and future insights',
       'Relationship, career, and spiritual guidance',
     ],
