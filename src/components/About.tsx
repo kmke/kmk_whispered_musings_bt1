@@ -1,4 +1,4 @@
-import { Heart, Palette, Sparkles } from 'lucide-react';
+import { Palette, Sparkles } from 'lucide-react';
 
 export default function About() {
   return (
@@ -18,8 +18,8 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-10 sm:mb-16">
           <div className="inline-block mb-4">
-            <div className="w-16 h-16 mx-auto rounded-full border-2 border-gold-600 flex items-center justify-center">
-              <Heart className="text-gold-600" size={32} />
+            <div className="w-16 h-16 mx-auto rounded-full border-2 border-gold-600 flex items-center justify-center overflow-hidden">
+              <img src="/enzo.png" alt="Enzo" className="w-full h-full object-cover" />
             </div>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl text-gray-900 mb-3 sm:mb-4 font-semibold px-2 sm:px-0">
