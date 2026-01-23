@@ -31,7 +31,6 @@ const services = [
     description: 'Beyond the cards, I offer direct intuitive guidance by connecting with your energy field. These sessions provide deep insights and messages from your higher self.',
     features: [
       'Direct spiritual channeling',
-      'Life purpose and soul path guidance',
       'Energy healing insights',
       'Personalized spiritual advice',
     ],
@@ -42,7 +41,7 @@ const services = [
 export default function Services() {
   return (
     <section id="services" className="py-24 bg-white relative overflow-hidden">
-      <div className="absolute inset-0 opacity-3">
+      <div className="absolute inset-0 opacity-[0.03]">
         <svg className="w-full h-full" viewBox="0 0 800 800">
           <circle cx="400" cy="400" r="350" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" strokeDasharray="10,10" />
           <circle cx="150" cy="150" r="120" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.5" />

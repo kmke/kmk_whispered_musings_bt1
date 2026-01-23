@@ -27,7 +27,7 @@ export default function Gallery() {
 
   return (
     <section id="gallery" className="py-24 bg-white relative overflow-hidden">
-      <div className="absolute inset-0 opacity-3">
+      <div className="absolute inset-0 opacity-[0.03]">
         <svg className="w-full h-full" viewBox="0 0 800 400">
           <circle cx="200" cy="200" r="150" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" />
           <circle cx="600" cy="200" r="150" fill="none" stroke="rgb(5, 102, 55)" strokeWidth="0.5" />
@@ -76,20 +76,6 @@ export default function Gallery() {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
-          <div className="bg-white rounded-2xl p-6 sm:p-8 inline-block shadow-lg border-2 border-gold-300 mx-2 sm:mx-0">
-            <h3 className="text-xl sm:text-2xl text-gray-900 mb-3 sm:mb-4 font-semibold px-2 sm:px-0">Commission Your Spirit Art</h3>
-            <p className="text-sm sm:text-base text-gray-800 mb-4 sm:mb-6 max-w-xl px-2 sm:px-0">
-              Let me create a personalized spirit art piece that captures your unique energy and spiritual essence
-            </p>
-            <a
-              href="#contact"
-              className="inline-block bg-gold-600 text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full hover:bg-gold-700 transition-colors duration-200 font-medium text-sm sm:text-base shadow-lg"
-            >
-              Request a Commission
-            </a>
-          </div>
-        </div>
       </div>
 
       {selectedPainting && (

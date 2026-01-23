@@ -3,7 +3,7 @@ import { Heart } from 'lucide-react';
 export default function Veterans() {
   return (
     <section id="veterans" className="py-24 bg-white relative overflow-hidden">
-      <div className="absolute inset-0 opacity-3">
+      <div className="absolute inset-0 opacity-[0.03]">
         <svg className="w-full h-full" viewBox="0 0 800 800">
           <circle cx="400" cy="400" r="350" fill="none" stroke="#B22234" strokeWidth="0.5" strokeDasharray="10,10" />
           <circle cx="150" cy="150" r="120" fill="none" stroke="#3C3B6E" strokeWidth="0.5" opacity="0.5" />
@@ -48,7 +48,7 @@ export default function Veterans() {
           </p>
 
           <p className="text-base sm:text-lg">
-            Our soldiers are brave young men and women who vowed to protect our freedoms at a great cost to them. Not just physically, but mentally and emotionally as well. I have other family members who have served and suffered from PTSD as well. It is an "unseen" slayer that robs the person of their sense of security and peace. It is important that we support our soldiers when they return home so they can find that "peace" they need. They need our support to transition back into civilian life. For this reason, I will be giving 20-minute readings for $20 for those who are interested and will donate the proceeds to the Wounded Warrior Project. The Wounded Warrior Project helps soldiers with resources for when they return to civilian life.
+            Our soldiers are brave young men and women who vowed to protect our freedoms at a great cost to them. Not just physically, but mentally and emotionally as well. I have other family members who have served and suffered from PTSD as well. It is an unseen slayer that robs the person of their sense of security and peace. It is important that we support our soldiers when they return home so they can find that peace they need. They need our support to transition back into civilian life. For this reason, I will be giving 20-minute readings for $20 for those who are interested and will donate the proceeds to the Wounded Warrior Project. The Wounded Warrior Project helps soldiers with resources for when they return to civilian life.
           </p>
         </div>
 
@@ -63,8 +63,11 @@ export default function Veterans() {
             <p className="text-base sm:text-lg text-gray-800 mb-4 sm:mb-6">
               20-minute readings for <span className="text-red-600 font-semibold">$20</span>
             </p>
-            <p className="text-sm sm:text-base text-gray-700 mb-6">
+            <p className="text-sm sm:text-base text-gray-700 mb-2">
               All proceeds will be donated to the Wounded Warrior Project
+            </p>
+            <p className="text-sm sm:text-base text-gray-700 mb-6 font-semibold">
+              Available through February 28th, 2026
             </p>
             <a
               href="#contact"

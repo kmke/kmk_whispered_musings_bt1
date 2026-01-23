@@ -3,7 +3,7 @@ import { Heart, Palette, Sparkles } from 'lucide-react';
 export default function About() {
   return (
     <section id="about" className="py-24 bg-white relative overflow-hidden">
-      <div className="absolute inset-0 opacity-3">
+      <div className="absolute inset-0 opacity-[0.03]">
         <svg className="w-full h-full" viewBox="0 0 800 400">
           <circle cx="100" cy="200" r="150" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" />
           <circle cx="700" cy="200" r="150" fill="none" stroke="rgb(5, 102, 55)" strokeWidth="0.5" />

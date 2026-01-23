@@ -57,7 +57,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-24 bg-white relative overflow-hidden">
-      <div className="absolute inset-0 opacity-3">
+      <div className="absolute inset-0 opacity-[0.03]">
         <svg className="w-full h-full" viewBox="0 0 800 800">
           <circle cx="400" cy="400" r="350" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" strokeDasharray="5,5" />
           <circle cx="150" cy="150" r="120" fill="none" stroke="rgb(217, 119, 6)" strokeWidth="0.5" opacity="0.5" />
@@ -109,12 +109,6 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="mt-8 p-6 bg-white rounded-xl border-2 border-gold-300 shadow-md">
-              <h4 className="text-xl text-gray-900 mb-3 font-semibold">Special Offer</h4>
-              <p className="text-gray-800 mb-2 font-medium">30-minute session: $45</p>
-              <p className="text-gray-800 mb-2 font-medium">60-minute session: $90</p>
-              <p className="text-sm text-gray-700 mt-4">Limited slots available monthly</p>
-            </div>
           </div>
 
           <div>
